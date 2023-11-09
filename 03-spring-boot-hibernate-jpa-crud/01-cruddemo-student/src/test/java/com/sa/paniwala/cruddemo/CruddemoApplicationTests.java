@@ -1,10 +1,10 @@
-package com.sa.paniwala;
+package com.sa.paniwala.cruddemo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PaniwalaApplicationTests {
+class CruddemoApplicationTests {
 
 	@Test
 	void contextLoads() {
