@@ -1,0 +1,33 @@
+1- Rest API - Get
+2- Rest API to fetch multiple records as JSON
+3- Add exception handler 
+4- Add custom exception response
+5- Throw custom exception response
+6- Controller advice to handle global exception
+7- Rest API design
+   7-1 Api requirements
+8- Employee server
+   8-1 Service facade design pattern
+	This is an intermediate layer for custom business layer
+9-Spring Data JPA
+	www.luv2code.com/jpa-repository-javadoc
+	www.luv2code.com/spring-data-jpa-defining-custom-queries
+10- Spring data rest
+	spring-boot-starter-data-rest
+	Spring Data REST endpoints are HATEOAS compliant
+	HATEOAS: Hypermedia as the Engine of Application State
+        https://spring.io/understanding/HATEOAS
+	HATEOAS using Hypertext Application Language (HAL) data format
+	HAL: https://en.wikipedia.org/wiki/hypertext_application_language
+	
+	// change mapping 
+	spring.data.rest.base-path=/api
+
+Spring Data Rest Pagination, configuration & sorting
+	// to set page Size
+        spring.data.rest.default-page-size=10
+	www.luv2code.com/spring-boot-props (more configuration found here)
+	
+	// Sort
+	http://localhost:8080/employees?sort=lastname,desc
+	http://localhost:8080/employees?sort=lastname,firstname,desc
