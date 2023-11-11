@@ -1,0 +1,2 @@
+MIME - multipurpose internat mail extension
+JSON - java script object notation
