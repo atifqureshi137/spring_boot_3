@@ -1,0 +1,33 @@
+1- Security configuration
+	default password
+	inMemory users with roles
+2- Restrict access bases on roles
+3- Cross-Site Request Forgery
+	Primary use case is traditional web applications
+  	WHewn to use CSRF protection
+	Trational web apps wtih HTML forms to add/modify data
+	http.csrf(csrf -> scrf.disabled());
+
+4- Spring security User accounts stored in Database
+   Spring security ussed two tables with following names
+
+	1. users 
+		With following column names
+		1. username
+		2. password
+		3. enabled
+		
+		{'Atif', '{noop}test123', 1}
+		{noop} is algorithm id and noop means no algorithm.
+		1 mean active or inactive.
+	2. authorities
+		based on 
+		1. username
+                2. Roles
+		
+		{'john', 'ROLE_EMPLOYEE'}
+		internally Spring Security uses ROLES_ prefix.
+5- Spring security with plain password
+6- Spring security with Bcrypt encryption
+	No code change, same as in step 5.
+7- Spring security with custom tables
